@@ -13,37 +13,23 @@
         <a class="header__logo" href="#">
           <img src="./src/img/logo.svg" alt="Logo"
         /></a>
-        <div class="header__navigations">
+        <div class="header__navigation">
           <nav class="header__menu menu">
             <ul class="menu__body">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Home</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">About Us</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Buying</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Renting</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Selling</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Contact</a>
-              </li>
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Buying</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Renting</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Selling</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
             </ul>
           </nav>
           <div class="header__buttons">
             <button class="header__btn login">Login</button>
             <button class="header__btn signup">Sign Up</button>
           </div>
-          <div class="menu-icons">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="menu-icon">
+            <span></span><span></span><span></span>
           </div>
         </div>
       </div>
@@ -54,12 +40,55 @@
         <div class="hero__container">
           <div class="hero__content">
             <h1 class="hero__title">Perfect way to buy and sell a home</h1>
-            <p class="header__text">
-              Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna,
+            <p class="hero__text text">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna,
               massa aliqua dui pellentesque. Ac, gravida in eget non amet eget
-              purus non.
-            </p>
-            <div class="hero__filters"></div>
+              purus non.</p>
+            <div class="hero__filters filter">
+              <div class="block__filter block-filter">
+                <div class="block-filter__button">
+                  <div class="block-filter__header">
+                    <div class="block-filter__type">Purpose</div>
+                    <div class="block-filter__icon"></div>
+                  </div>
+                  <div class="block-filter__value">Buy</div>
+                </div>
+                <div class="block-filter__dropdown">
+                  <div class="block-filter__item">Buy</div>
+                  <div class="block-filter__item">Rent</div>
+                </div>
+              </div>
+              <div class="block__filter block-filter">
+                <div class="block-filter__button">
+                  <div class="block-filter__header">
+                    <div class="block-filter__type">Location</div>
+                    <div class="block-filter__icon"></div>
+                  </div>
+                  <div class="block-filter__value">Toronto, Canada</div>
+                </div>
+                <div class="block-filter__dropdown">
+                  <div class="block-filter__item">Tokyo, Japan</div>
+                  <div class="block-filter__item">New-York, USA</div>
+                  <div class="block-filter__item">Paris, France</div>
+                </div>
+              </div>
+              <div class="block__filter block-filter">
+                <div class="block-filter__button">
+                  <div class="block-filter__header">
+                    <div class="block-filter__type">Type</div>
+                    <div class="block-filter__icon"></div>
+                  </div>
+                  <div class="block-filter__value">Industrial Home</div>
+                </div>
+                <div class="block-filter__dropdown">
+                  <div class="block-filter__item">Сарай</div>
+                  <div class="block-filter__item">Особняк</div>
+                  <div class="block-filter__item">Квартира</div>
+                </div>
+              </div>
+              <div class="filter__btn">
+                <button>Search</button>
+              </div>
+            </div>
           </div>
           <div class="hero__image">
             <img src="./src/img/hero.png" alt="Hero">
