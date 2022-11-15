@@ -214,6 +214,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr 160px;
   color: black;
 
+  .block-filter:nth-child(2){
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;;
+  }
+
   &__btn {
     padding: 5px;
 
@@ -244,7 +249,22 @@ body {
     right: 0;
     left: 0;
     background-color: white;
+    border-radius: 5px;
     opacity: 0;
+    visibility: hidden;
+
+    &._active{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__item{
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #E8E8E8;
+    }
   }
 
   &__header {
@@ -257,11 +277,29 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--text-color);
+    cursor: pointer;
   }
 
   &__icon {
     background: url("../img/dropdown-arrow.svg") center center no-repeat;
     height: 6px;
     width: 10px;
+    &._active {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.featured {
+  padding: 60px 0;  
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
